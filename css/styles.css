@@ -1,0 +1,229 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo de página claro */
+    color: #0f1dec;
+}
+
+header {
+    background-color: #105cff; /* Azul rey */
+    color: white;
+    padding: 10px;
+    text-align: right 100px;
+}
+
+
+header .logo img {
+    width: 80spx; /* Ajusta el tamaño del logo según sea necesario */
+    padding-right: 80%;
+}
+
+nav {
+    margin-top: 10px
+}
+
+nav ul {
+    list-style: none;
+    padding:0%;
+    margin:0%;
+    text-align: left;
+    color: #6ca8e9;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li ul.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0033A0; /* Azul rey */
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li:hover ul.submenu {
+    display: block;
+}
+
+nav ul li ul.submenu li {
+    display: block;
+    margin: 0;
+}
+
+nav ul li ul.submenu li a {
+    padding: 10px 20px;
+    display: block;
+    color: white;
+}
+
+nav ul li ul.submenu li a:hover {
+    background-color: #009688; /* Turquesa */
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section.one {
+    text-align: center ;
+    padding: auto;
+    background-image: none;
+    background-position: 100%;
+
+}
+
+section.p {
+    color:#00796B ;/*parrafo color*/
+}
+
+section.one h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #0033A0; /* Azul rey */
+}
+
+section.one p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+section.one img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+section.one button {
+    background-color: #009688; /* Turquesa */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+section.one button:hover {
+    background-color: #00796B; /* Color más oscuro de turquesa */
+}
+
+.pide-tu-presupuesto {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.pide-tu-presupuesto h2 {
+    text-align: center;
+    color: #0033A0; /* Azul rey */
+}
+
+.pide-tu-presupuesto form {
+    display: flex;
+    flex-direction: column;
+}
+
+.pide-tu-presupuesto label {
+    margin-bottom: 5px;
+}
+
+.pide-tu-presupuesto input[type="text"],
+.pide-tu-presupuesto input[type="email"],
+.pide-tu-presupuesto input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.pide-tu-presupuesto input[type="submit"] {
+    background-color: #009688; /* Turquesa */
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.pide-tu-presupuesto input[type="submit"]:hover {
+    background-color: #00796B; /* Color más oscuro de turquesa */
+}
+
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    padding: 20px;
+    background-color: #f4f4f4; /* Fondo opcional para el contenedor */
+}
+
+.cta-image {
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
+
+.cta-image img {
+    max-width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.cta-content {
+    text-align: center; /* Centra el texto dentro del contenedor de contenido */
+}
+
+.cta-content h1 {
+    margin-bottom: 10px; /* Espacio debajo del encabezado */
+}
+
+.cta-content p {
+    margin-bottom: 20px; /* Espacio debajo del párrafo */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el cursor */
+}
+
+@media (min-width: 768px) {
+    .footer .row {
+        text-align: left;
+    }
+}
+/*opcionesdecuidado */
+.custom-card {
+    width: 50%; /* Ajusta el ancho de la tarjeta al 50% del contenedor padre */
+    margin: 0% auto; /* Centra la tarjeta horizontalmente */
+    height: 100vh; /* Hace que la tarjeta ocupe toda la altura de la ventana */
+    position: relative; /* Necesario para que el overlay se ajuste dentro de la tarjeta */
+}
+
+.custom-card img {
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+    height: 100%; /* Hace que la imagen ocupe toda la altura del contenedor */
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+}
