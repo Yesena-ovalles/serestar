@@ -2,9 +2,15 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 1rem;
     background-color: #f4f4f4; /* Fondo de página claro */
     color: #0f1dec;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 600;
 }
 
 header {
@@ -21,14 +27,14 @@ header .logo img {
 }
 
 nav {
-    margin-top: 10px
+    margin-top: 100px
 }
 
 nav ul {
     list-style: none;
     padding:0%;
     margin:0%;
-    text-align: left;
+    text-align: center;
     color: #6ca8e9;
 
 }
@@ -80,16 +86,31 @@ main {
     margin: auto;
 }
 
+h2 {
+    text-align: center;
+    color: #007bff;
+}
+
+section p {
+    text-align: center;
+    color: #007bff;
+}
+
+h3 {
+    text-align: center;
+    color: #e9edf1;
+}
+
 section.one {
     text-align: center ;
     padding: auto;
-    background-image: none;
+    background-image:none;
     background-position: 100%;
 
 }
 
 section.p {
-    color:#00796B ;/*parrafo color*/
+    color:#007bff ;/*parrafo color*/
 }
 
 section.one h2 {
@@ -227,3 +248,169 @@ section.one button:hover {
     height: 100%; /* Hace que la imagen ocupe toda la altura del contenedor */
     width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
 }
+
+/*blog*/
+
+
+
+.cssportal-grid {
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-columns: repeat(4, 1fr);
+	gap: 9px 11px;
+	width: 100%;
+	height: 100%;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+    
+.div1 {
+    grid-column: span 5 / span 5;
+}
+
+.div2 {
+    grid-row: span 4 / span 4;
+    grid-row-start: 2;
+}
+
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-row-start: 2;
+}
+
+.div4 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+.div5 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+
+.div6 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+        
+
+.nav-link {
+    margin: 0 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.footer {
+    background-color: #007bff;
+}
+
+.footer a {
+    color: #f8f9fa;
+}
+
+/* styles.css */
+
+/* Estilos generales para todos los dispositivos */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header .logo img {
+    max-width: 50px; /* Ajusta el tamaño del logo */
+}
+
+/* Ajustar el menú de navegación para dispositivos móviles */
+.navbar-nav .nav-link {
+    font-size: 1rem; /* Tamaño de fuente más pequeño en móviles */
+}
+
+/* Sección del formulario */
+section.data {
+    padding: 80px;
+}
+
+/* Artículos */
+article img {
+    max-width: 100%; /* Asegura que las imágenes sean responsivas */
+}
+
+/* Footer */
+.footer {
+    padding: 10px;
+}
+
+/* Media Queries */
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+    .navbar-nav .nav-link {
+        font-size: 0.875rem;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .footer .col-md-4 {
+        text-align: center;
+    }
+
+    .footer .d-flex {
+        justify-content: center;
+    }
+
+    .footer .text-light {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .footer .border-top {
+        margin-top: 20px;
+    }
+}
+
+/* Estilos para pantallas medianas (tablets) y grandes (escritorios) */
+@media (min-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    .footer .col-md-4 {
+        text-align: left;
+    }
+
+    .footer .d-flex {
+        justify-content: flex-start;
+    }
+
+    .footer .text-light {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-nav .nav-link {
+        font-size: 1.125rem;
+    }
+}
+
+
+        
+
